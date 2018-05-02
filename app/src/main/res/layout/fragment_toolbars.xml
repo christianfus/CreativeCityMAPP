@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.christian.creativecitymapp.ToolbarsFragment">
+
+    <Button
+        android:id="@+id/buybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Buy your Tickets here" />
+
+    <TextView
+        android:id="@+id/Timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/whatson"
+        android:layout_below="@+id/whatson"
+        android:layout_marginTop="20dp"
+        android:text="Timetable:" />
+
+    <TextView
+        android:id="@+id/whatson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Place"
+        android:layout_below="@+id/Place"
+        android:layout_marginTop="19dp"
+        android:text="What's ON: " />
+
+    <TextView
+        android:id="@+id/Place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buybutton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/buybutton"
+        android:text="Place:" />
+
+    <TextView
+        android:id="@+id/infoplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Place"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/Place"
+        android:text="Edge Theater" />
+
+    <TextView
+        android:id="@+id/infowhats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/whatson"
+        android:layout_alignStart="@+id/infoplace"
+        android:text="Performance of MacBeth" />
+
+    <TextView
+        android:id="@+id/infotime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Timetable"
+        android:layout_alignBottom="@+id/Timetable"
+        android:layout_toEndOf="@+id/whatson"
+        android:text="1st, 2nd, 3rd June 7.30pm (tickets can be booked through Edge Theatre Website)" />
+
+</RelativeLayout>
