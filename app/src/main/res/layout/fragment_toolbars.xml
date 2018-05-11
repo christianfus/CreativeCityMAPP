@@ -7,12 +7,18 @@
 
     <Button
         android:id="@+id/buybutton"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
-        android:text="Buy your Tickets here" />
+        android:background="#ffff99"
+        android:text="Buy your Tickets here"
+        android:textColor="#e56ee3"
+        android:textSize="29sp" />
+
 
     <TextView
         android:id="@+id/Timetable"
@@ -20,8 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/whatson"
         android:layout_below="@+id/whatson"
-        android:layout_marginTop="20dp"
-        android:text="Timetable:" />
+        android:layout_marginTop="18dp"
+        android:text="Timetable:"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/whatson"
@@ -29,35 +37,42 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Place"
         android:layout_below="@+id/Place"
-        android:layout_marginTop="19dp"
-        android:text="What's ON: " />
+        android:layout_marginTop="22dp"
+        android:text="What's ON: "
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/Place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/buybutton"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="15dp"
-        android:layout_toStartOf="@+id/buybutton"
-        android:text="Place:" />
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="23dp"
+        android:text="Place:"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/infoplace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Place"
         android:layout_alignBottom="@+id/Place"
-        android:layout_marginStart="15dp"
-        android:layout_toEndOf="@+id/Place"
-        android:text="Edge Theater" />
+        android:layout_alignStart="@+id/infowhats"
+        android:text="Edge Theater"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/infowhats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/whatson"
         android:layout_alignBottom="@+id/whatson"
-        android:layout_alignStart="@+id/infoplace"
-        android:text="Performance of MacBeth" />
+        android:layout_alignStart="@+id/infotime"
+        android:text="Performance of MacBeth"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/infotime"
@@ -65,7 +80,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Timetable"
         android:layout_alignBottom="@+id/Timetable"
+        android:layout_marginStart="27dp"
         android:layout_toEndOf="@+id/whatson"
-        android:text="1st, 2nd, 3rd June 7.30pm (tickets can be booked through Edge Theatre Website)" />
+        android:text="1st, 2nd, 3rd June 7.30pm (tickets can be booked through Edge Theatre Website)"
+        android:textSize="18sp" />
 
 </RelativeLayout>

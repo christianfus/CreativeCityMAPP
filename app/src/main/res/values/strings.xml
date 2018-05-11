@@ -3,5 +3,7 @@
     <string name="title_activity_maps">Creative City APP</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="info">How can I help?</string>
+    <string name="about">About Creative City</string>
 </resources>
